@@ -3,55 +3,67 @@ package org.example;
 public class Cliente {
     private String cpf;
     private String nome;
-    private String idade;
+    private int idade;
     private String endereco;
+    private char genero;
 
-    public Cliente(.String cpf, String nome, String idade, String endereco) {
+    public Cliente(String cpf, String nome, int idade, String endereco, char genero) {
         this.cpf = cpf;
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
+        this.genero = genero;
     }
 
-    public java.lang.String getCpf() {
+       public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(java.lang.String cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public java.lang.String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(java.lang.String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public java.lang.String getIdade() {
+    public int getIdade() {
         return idade;
     }
 
-    public void setIdade(java.lang.String idade) {
+    public void setIdade(int idade) {
         this.idade = idade;
     }
 
-    public java.lang.String getEndereco() {
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(java.lang.String endereco) {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+
+    @Override
+    public String toString() {
         return "Cliente{" +
                 "cpf=" + cpf +
                 ", nome=" + nome +
                 ", idade=" + idade +
                 ", endereco=" + endereco +
+                ", genero=" + genero +
                 '}';
     }
 }
